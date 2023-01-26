@@ -113,6 +113,7 @@ body
                       align-items: center;
                       align-content: space-around;
                       background-color: #cfebf9;
+                      flex-wrap: wrap;
                     }
 
     .flex-container > div {

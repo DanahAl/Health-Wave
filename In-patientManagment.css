@@ -100,3 +100,73 @@ height:auto;
 }
 
 /*End Footer*/
+/*Shadin*/
+.flexbox{
+display: flex;
+/*background-color: lightblue;*/
+justify-content: space-between;
+clear: right;
+margin-bottom: 20px;
+flex-wrap: wrap;
+width:1200px;
+}
+
+.PN, #patientName{
+margin-top:50px;
+margin-right: 5px;
+}
+
+.DD{
+margin-top:50px;
+margin-right: 5px;
+margin-left: 20px;
+}
+
+#DischargeDate{
+margin-top:50px;
+margin-right: 5px;
+}
+
+#filterbyW{
+float: right;
+margin-bottom: 20px;
+margin-right:250px;
+}
+
+.flexbox div{
+background-color: #f1f1f1;
+margin: 10px;
+padding: 20px;
+font-size: 30px;
+}
+  
+ 
+ h3{
+ text-align:center;
+ }   
+ 
+div#PInfo
+{
+background-color:#003153 ;
+color:white;
+font-size:1.3em;
+position:absolute;
+left:75%;
+top:150%;
+border: 2px solid lightblue;
+ }  
+ 
+ .flexbox p{
+ font-size: 0.6em;
+ }  
+
+
+
+
+
+
+
+
+
+
+

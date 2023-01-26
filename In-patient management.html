@@ -3,7 +3,7 @@
   
     <head>
             <title>In-Patient management</title>
-            <link rel="Stylesheet" href="DoctorsStyle.css">
+            <link rel="Stylesheet" href="In-patientManagment.css">
      
     </head> <!-- End Head--> 
     
@@ -136,37 +136,118 @@
         
          <main>
           <form> 
-           <ul>
-            <li><label>Patient's Name:</label></li>
-            <input type= "text" name=""> </input>
-          </ul>
-           <ul>
-            <li><label>Discharge Date: </label></li>
-            <input type="date"  name="Discharge Date" value="dd/mm/yyyy">
+           
+            <label class="PN" for="patientName">Patient's Name:</label>
+            <input type= "text" name="patientN" id="patientName"> </input>
+          
+            <label  class="DD" for="DischargeDate">Discharge Date: </label>
+            <input type="date"  name="Discharge-Date" value="dd/mm/yyyy" id="DischargeDate">
             <!-- <input type="submit"> -->
-          </ul>
-           <ul>
-           <li><p>Filter by ward<p></li>
-            <select value= "Ward"> 
+            <br><br>
+           
+            <!--<label class="filterbyWLabel" for="filterbyW" >Filter by ward</label>-->
+            <select name="ward" id="filterbyW"> 
+             <option selected disabled hidden>Filter by wards</option>
              <option> Ward 1</option>
              <option> Ward 2</option>
              <option> Ward 3</option>
-             <option> Ward 4</option>
-             <option> Ward 5</option>
+          
+             <!--<option> Ward 4</option>
+             <option> Ward 5</option>-->
            </select>
       
  </form>
   <div class="flexbox">
-     <p><img src="emptybed.PNG" alt="empty bed"> ID:1</p>
-     <p> <img src="emptybed.PNG" alt="empty bed">ID:2</p>
-     <p><img src="occupied.PNG" alt="occupied bed">ID:3</p>
-     <p><img src="occupied.PNG" alt="occupied bed">ID:4</p>
-     <p><img src="occupied.PNG" alt="occupied bed">ID:5</p>
-     <p><img src="occupied.PNG" alt="occupied bed">ID:6</p>
+     <div width="300em">
+       <img src="images/occupied.PNG" alt="occupied bed" width="200px" height="200px" 
+       title="
+       Khalid Nasser
+       22/1/2023
+       26/1/2023 ">
+       <p>Bed ID: 1</p>
+     </div>
+    <div>
+      <img src="images/emptybed.PNG" alt="empty bed" width="200px" height="200px">
+      <p>Bed ID: 2</p>
+    </div>
+    <div>
+       <img src="images/occupied.PNG" alt="occupied bed" width="200px" height="200px" 
+       title="
+       Nora Ahmad
+       19/1/2023
+       1/2/2023 ">
+       <p>Bed ID: 3</p>
+    </div>
+    <div>
+       <img src="images/emptybed.PNG" alt="empty bed" width="200px" height="200px">
+       <p>Bed ID: 4</p>
+    </div>
+     <div id="b5">
+       <img src="images/occupied.PNG" alt="occupied bed" width="200px" height="200px"
+       title="
+       Ahmad Faisal
+       28/12/2022
+       5/2/2023">
+       <p>Bed ID: 5</p>
+    </div>
+     <div>
+       <img src="images/occupied.PNG" alt="occupied bed" width="200px" height="200px"
+       title="
+       Abdullah Ali
+       13/12/2022
+       5/3/2023 ">
+       <p>Bed ID: 6</p>
+    </div>
+     <div>
+       <img src="images/occupied.PNG" alt="occupied bed" width="200px" height="200px"
+       title="
+       Noha Khalid
+       25/1/2023
+       31/1/2023">
+       <p>Bed ID: 7</p>
+    </div>
+     <div>
+       <img src="images/emptybed.PNG" alt="empty bed" width="200px" height="200px">
+       <p>Bed ID: 8</p>
+    </div>
+     <div>
+       <img src="images/emptybed.PNG" alt="empty bed" width="200px" height="200px">
+       <p>Bed ID: 9</p>
+    </div>
+     <div>
+       <img src="images/emptybed.PNG" alt="empty bed" width="200px" height="200px">
+       <p>Bed ID: 10</p>
+    </div>
+    <div>
+       <img src="images/occupied.PNG" alt="occupied bed" width="200px" height="200px"
+       title="
+       Sara Mohammed
+       5/1/2023 
+       3/3/2023 ">
+       <p>Bed ID: 11</p>
+    </div>
+    <div>
+       <img src="images/occupied.PNG" alt="occupied bed" width="200px" height="200px"
+       title="
+       Ali Abdulmohsen
+       29/10/2022
+       27/1/2023 ">
+       <p>Bed ID: 12</p>
+    </div>
+    
+    <div id="PInfo">
+     <h3> Occupied bed</h3>
+     <p>Patient's Name: Sara Mohammed</p>
+     <p>Admission Date: 5/1/2023 </p>
+     <p>Discharge Date: 3/3/2023</p>
+     </div>
+    
+     <!--<p><img src="occupied.PNG" alt="occupied bed">ID:5</p>
+     <p><img src="occupied.PNG" alt="occupied bed">ID:6</p> -->
+     
 
 
-
-</main>
+  </main>
 
         <footer>
              <p> ©2023 Healthy Wave Hospital </p>
